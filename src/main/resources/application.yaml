@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /supermarket
+
+jwt:
+  signerKey: "UPhmqkJthfAVPl2XN1llEM3WbDagGGiP4J0lickNbsmjfWM2fpeSq9M9VCm4QxRd"
+spring:
+  datasource:
+    url: ${DBMS_CONNECTION:jdbc:mysql://localhost:3306/supermarket}
+    username: "root"
+    password: "vonuhuyentran1202"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
